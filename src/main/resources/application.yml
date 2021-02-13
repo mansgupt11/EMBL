@@ -1,0 +1,17 @@
+spring:
+  application:
+      name: person-api
+
+jwt:
+  secret: secret
+
+---
+spring:
+  data:
+
+    mongodb:
+      host: api-database
+  config:
+    activate:
+      on-profile: docker
+---
